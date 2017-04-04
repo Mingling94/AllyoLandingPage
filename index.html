@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
+    <title>Allyo</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
@@ -57,12 +57,34 @@
             margin-bottom: 1rem;
             color: #1C2331;
         }
+        .icon {
+            z-index: 1;
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 100px;
+            height: 100px;
+        }
+
+        .widget {
+            margin: auto;
+            width: 255px;
+            height: 426px;
+        }
+
+        #root {
+          z-index: 1;
+          position: absolute;
+          left: calc(50% - 104px);
+          top: 64px;
+        }
+
     </style>
 </head>
 
 <body>
     <!--Mask-->
     <div class="view hm-black-strong">
+        <img class="icon" src="img/svg/icon.svg" alt="Kiwi standing on oval">
         <div class="full-bg-img flex-center">
             <ul>
                 <li>
@@ -77,6 +99,10 @@
                   <div class="divider-new">
                     <h2 class="h2-responsive">OR</h2>
                   </div>
+                </li>
+                <li style="position:relative">
+                  <div id="root"></div>
+                  <img class="widget" src="img/iphone.png" alt="Kiwi standing on oval">
                 </li>
             </ul>
         </div>
@@ -218,8 +244,6 @@
     </div>
     <!--/ Main container-->
 
-
-
     <!--Footer-->
     <footer class="page-footer center-on-small-only">
         <!--Footer Links-->
@@ -318,6 +342,10 @@
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mobilecheck.js"></script>
+    <!-- server constants JavaScript -->
+    <script type="text/javascript" src="http://chatbot.6m6budiay9.us-west-2.elasticbeanstalk.com/web/widget.js?eid=MTk:1cp6fz:RWeRHjlAQxYFsoV4pRbQiHfWBk0&noclient=1" defer></script>
+    <!-- chat bubble JavaScript -->
+    <script type="text/javascript" src="js/bundle.js" defer></script>
     <!-- Animations init-->
     <script>
 if(window.mobilecheck()) {
